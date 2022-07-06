@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>
+            Driving check
+        </title>
+    </head>
+    <body>
+        <input type="number" id="age">
+        <button onclick="checkage()">Submit</button>
+        <p id="result">show result here</p>
+    </body>
+</html>
+
+<script>
+    function checkage(){
+        var age = document.getElementById("age").value;
+        if (age>18)
+        document.getElementById("result").innerText=("You can drive in India!");
+        else if (age<18)
+        document.getElementById("result").innerText=("You can't drive in India");
+        else
+        document.getElementById("result").innerText=("You are just old enough to drive in India!");
+    }
+</script>
